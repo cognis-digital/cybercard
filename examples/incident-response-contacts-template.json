@@ -1,0 +1,46 @@
+{
+  "title": "Incident Response Contacts (Template)",
+  "subtitle": "Fill in your organization's details before an incident — keep printed and offline",
+  "footer": "Maintainer: Cognis Digital — TEMPLATE. Replace all placeholder values.",
+  "sections": [
+    {
+      "heading": "Internal Escalation",
+      "rows": [
+        { "term": "IR Lead", "value": "<name> — <phone> — <email>", "note": "Primary decision-maker" },
+        { "term": "Deputy", "value": "<name> — <phone> — <email>", "note": "Backup when lead unreachable" },
+        { "term": "SOC / Duty", "value": "<24x7 hotline>", "note": "First line of contact" },
+        { "term": "IT On-Call", "value": "<rotation tool / number>" }
+      ]
+    },
+    {
+      "heading": "Leadership & Legal",
+      "rows": [
+        { "term": "CISO", "value": "<name> — <phone>" },
+        { "term": "Legal", "value": "<counsel name> — <phone>", "note": "Engage early for privilege" },
+        { "term": "Privacy / DPO", "value": "<name> — <phone>", "note": "Breach-notification obligations" },
+        { "term": "Comms / PR", "value": "<name> — <phone>", "note": "External messaging only via this channel" }
+      ]
+    },
+    {
+      "heading": "External Parties",
+      "rows": [
+        { "term": "IR Retainer", "value": "<firm> — <hotline> — <case ref>" },
+        { "term": "Cyber Insurer", "value": "<carrier> — <claims line> — <policy #>", "note": "Notify within policy window" },
+        { "term": "Law Enforcement", "value": "<local field office / report portal>" },
+        { "term": "Cloud Provider", "value": "<provider abuse/security contact>" }
+      ]
+    },
+    {
+      "heading": "First Actions Checklist",
+      "rows": [
+        { "term": "1. Record", "value": "Note time, reporter, and observed symptoms" },
+        { "term": "2. Triage", "value": "Confirm scope; assign severity" },
+        { "term": "3. Contain", "value": "Isolate affected systems; preserve volatile evidence" },
+        { "term": "4. Notify", "value": "Escalate per this card; start incident log" },
+        { "term": "5. Eradicate", "value": "Remove cause once scope is understood" },
+        { "term": "6. Recover", "value": "Restore from known-good; monitor for recurrence" },
+        { "term": "7. Review", "value": "Post-incident retro; update controls" }
+      ]
+    }
+  ]
+}

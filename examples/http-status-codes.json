@@ -1,0 +1,59 @@
+{
+  "title": "HTTP Status Codes",
+  "subtitle": "Standard HTTP response status codes grouped by class",
+  "footer": "Maintainer: Cognis Digital — Quick reference for web and API triage",
+  "sections": [
+    {
+      "heading": "1xx Informational",
+      "rows": [
+        { "term": "100", "value": "Continue" },
+        { "term": "101", "value": "Switching Protocols" },
+        { "term": "103", "value": "Early Hints" }
+      ]
+    },
+    {
+      "heading": "2xx Success",
+      "rows": [
+        { "term": "200", "value": "OK" },
+        { "term": "201", "value": "Created" },
+        { "term": "202", "value": "Accepted" },
+        { "term": "204", "value": "No Content" },
+        { "term": "206", "value": "Partial Content", "note": "Range requests" }
+      ]
+    },
+    {
+      "heading": "3xx Redirection",
+      "rows": [
+        { "term": "301", "value": "Moved Permanently" },
+        { "term": "302", "value": "Found", "note": "Temporary redirect" },
+        { "term": "303", "value": "See Other" },
+        { "term": "304", "value": "Not Modified", "note": "Cache validation" },
+        { "term": "307", "value": "Temporary Redirect", "note": "Method preserved" },
+        { "term": "308", "value": "Permanent Redirect", "note": "Method preserved" }
+      ]
+    },
+    {
+      "heading": "4xx Client Error",
+      "rows": [
+        { "term": "400", "value": "Bad Request" },
+        { "term": "401", "value": "Unauthorized", "note": "Authentication required" },
+        { "term": "403", "value": "Forbidden", "note": "Authenticated but not allowed" },
+        { "term": "404", "value": "Not Found" },
+        { "term": "405", "value": "Method Not Allowed" },
+        { "term": "409", "value": "Conflict" },
+        { "term": "422", "value": "Unprocessable Content", "note": "Validation failed" },
+        { "term": "429", "value": "Too Many Requests", "note": "Rate limited" }
+      ]
+    },
+    {
+      "heading": "5xx Server Error",
+      "rows": [
+        { "term": "500", "value": "Internal Server Error" },
+        { "term": "501", "value": "Not Implemented" },
+        { "term": "502", "value": "Bad Gateway", "note": "Upstream returned invalid response" },
+        { "term": "503", "value": "Service Unavailable", "note": "Overloaded or down" },
+        { "term": "504", "value": "Gateway Timeout", "note": "Upstream did not respond" }
+      ]
+    }
+  ]
+}

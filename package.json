@@ -1,0 +1,42 @@
+{
+  "name": "@cognis-digital/cybercard",
+  "version": "1.0.0",
+  "description": "Printable security quick-reference card generator: validate card definitions and render self-contained print-ready HTML and Markdown cards.",
+  "type": "module",
+  "bin": {
+    "cybercard": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "examples",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "node --test \"dist/test/*.test.js\"",
+    "pretest": "tsc"
+  },
+  "keywords": [
+    "security",
+    "cheatsheet",
+    "reference",
+    "cli",
+    "html",
+    "markdown",
+    "printable",
+    "card",
+    "cybersecurity"
+  ],
+  "author": "Cognis Digital",
+  "license": "SEE LICENSE IN COCL 1.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}

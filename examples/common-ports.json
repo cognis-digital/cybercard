@@ -1,0 +1,70 @@
+{
+  "title": "Common Network Ports",
+  "subtitle": "Frequently encountered TCP/UDP service ports for triage and firewall review",
+  "footer": "Maintainer: Cognis Digital — Reference card, verify against your own environment",
+  "sections": [
+    {
+      "heading": "Remote Access & Shell",
+      "rows": [
+        { "term": "22", "value": "SSH — secure shell / SFTP", "note": "TCP" },
+        { "term": "23", "value": "Telnet — unencrypted, avoid", "note": "TCP" },
+        { "term": "3389", "value": "RDP — Windows remote desktop", "note": "TCP/UDP" },
+        { "term": "5900", "value": "VNC — remote framebuffer", "note": "TCP" }
+      ]
+    },
+    {
+      "heading": "Web & Application",
+      "rows": [
+        { "term": "80", "value": "HTTP", "note": "TCP" },
+        { "term": "443", "value": "HTTPS / TLS", "note": "TCP/UDP (QUIC)" },
+        { "term": "8080", "value": "HTTP alternate / proxy", "note": "TCP" },
+        { "term": "8443", "value": "HTTPS alternate", "note": "TCP" }
+      ]
+    },
+    {
+      "heading": "Mail",
+      "rows": [
+        { "term": "25", "value": "SMTP — mail relay", "note": "TCP" },
+        { "term": "587", "value": "SMTP submission (STARTTLS)", "note": "TCP" },
+        { "term": "465", "value": "SMTPS — implicit TLS", "note": "TCP" },
+        { "term": "143", "value": "IMAP", "note": "TCP" },
+        { "term": "993", "value": "IMAPS — implicit TLS", "note": "TCP" },
+        { "term": "110", "value": "POP3", "note": "TCP" },
+        { "term": "995", "value": "POP3S — implicit TLS", "note": "TCP" }
+      ]
+    },
+    {
+      "heading": "Name & Directory",
+      "rows": [
+        { "term": "53", "value": "DNS — name resolution", "note": "TCP/UDP" },
+        { "term": "389", "value": "LDAP", "note": "TCP/UDP" },
+        { "term": "636", "value": "LDAPS — LDAP over TLS", "note": "TCP" },
+        { "term": "88", "value": "Kerberos authentication", "note": "TCP/UDP" }
+      ]
+    },
+    {
+      "heading": "File & Database",
+      "rows": [
+        { "term": "21", "value": "FTP — control channel", "note": "TCP" },
+        { "term": "445", "value": "SMB — Windows file sharing", "note": "TCP" },
+        { "term": "2049", "value": "NFS — network file system", "note": "TCP/UDP" },
+        { "term": "3306", "value": "MySQL / MariaDB", "note": "TCP" },
+        { "term": "5432", "value": "PostgreSQL", "note": "TCP" },
+        { "term": "1433", "value": "Microsoft SQL Server", "note": "TCP" },
+        { "term": "6379", "value": "Redis", "note": "TCP" },
+        { "term": "27017", "value": "MongoDB", "note": "TCP" }
+      ]
+    },
+    {
+      "heading": "Infrastructure & Management",
+      "rows": [
+        { "term": "67/68", "value": "DHCP — server / client", "note": "UDP" },
+        { "term": "123", "value": "NTP — time synchronization", "note": "UDP" },
+        { "term": "161/162", "value": "SNMP — agent / trap", "note": "UDP" },
+        { "term": "514", "value": "Syslog", "note": "UDP" },
+        { "term": "3000", "value": "Grafana (common default)", "note": "TCP" },
+        { "term": "9090", "value": "Prometheus (common default)", "note": "TCP" }
+      ]
+    }
+  ]
+}
