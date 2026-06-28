@@ -16,6 +16,31 @@ clean printable cards on every change.
 - TypeScript, ESM, built with `tsc`.
 - Self-contained HTML output — print it, archive it, hand it out offline.
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+  "id": "1234567890",
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "phone": "+1-555-1234",
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345"
+  },
+  "roles": ["admin", "user"],
+  "groups": ["dev", "qa"]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Install
 
 ```bash
